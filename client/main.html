@@ -1,25 +1,31 @@
-<head>
-  <title>my_meteor_app</title>
-</head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-  {{> info}}
+    <h1 id="hd">Hello wellcome to the Login Page in Meteor!</h1>
+    {{#if isPage 'Login'}}
+    {{> Login}}
+    {{/if}}
+    {{#if isPage 'register'}}
+    {{> register}}
+    {{/if}}
+    <ul>
+        <button class="clickChangesPage" data-page='register'>Register</button>
+        <button class="myclass" data-page="Login">Login</button>
+    </ul>
 </body>
 
-<template name="hello">
-  <button id="gf">Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="Login">
+    <h2 id="id-input">LOGIN:</h2>
+    <form id="id-input">
+        <input type="email" name="loginEmail"><br>
+        <input type="password" name="loginPassword"><br>
+        <input type="submit" value="Login"><br>
+    </form>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="register">
+    <h2 id="id-input">REGISTER:</h2>
+    <form id="id-input">
+        <input type="email" name="registerEmail"><br>
+        <input type="password" name="registerPassword"><br>
+        <input type="submit" value="Register"><br>
+    </form>
 </template>

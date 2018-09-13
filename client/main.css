@@ -1,9 +1,50 @@
+
+
+/* CSS declarations go here */
+
+#hd {
+  font-family: monospace;
+  text-align: center;
+}
+
+#id-input{
+  text-align: center;
+}
+#btn{
+  text-align: right;
+}
+.clickChangesPage{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:absolute;
+    top:0.5cm;
+    right:0;
+    font-size: 100%;
+    color:black;
+    border-block-end-color: aqua;
+
+}
+.myclass{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position:absolute;
+  top:0.5cm;
+  right:2cm;
+  font-size: 100%;
+  color:black;
+  border-block-end-color: aqua;
+
+}
 body {
-  padding: 10px;
   font-family: sans-serif;
-  background: #466664
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
 }
-#gf {
-background: red;
-font: bolder
-}
+
